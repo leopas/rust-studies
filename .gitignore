@@ -1,0 +1,27 @@
+# Rust
+target/
+**/target/
+**/*.rs.bk
+Cargo.lock
+
+# Env e segredos
+.env
+.env.api
+.env.*.local
+
+# Certificados e chaves
+/certs/
+/certs-mtls/
+*.pem
+*.key
+!DigiCert*.pem
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
