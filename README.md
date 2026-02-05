@@ -78,7 +78,7 @@ sequenceDiagram
     API-->>C: 200 + JWT
 
     Note over C,DB: Protected: hamburgueres (Bearer token)
-    C->>API: POST /api/ods/hamburgueres-vendidos + Authorization: Bearer &lt;token&gt;
+    C->>API: "POST /api/ods/hamburgueres-vendidos + Authorization Bearer token"
     API->>Auth: require_jwt
     Auth-->>API: OK
     API->>DB: Query itenspedido, pedidos, produtos, etiquetas
